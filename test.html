@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul class="treeRoot"></ul>
+</body>
+	<script src="./treeCreater.js"></script>
+	<script>
+		var quotaTree = [
+            {
+                title: 'quotaParent1',
+                children: [
+                    {
+                        title: 'quotaSubParent1',
+                        children: []
+                    },
+                    {
+                        title: 'quotaSubParent2',
+                        children: [
+                            {
+                                title: 'quotaChild1'
+                            },
+                            {
+                                title: 'quotaChild2'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+        treeCreater(quotaTree, 'treeRoot')
+	</script>
+</html>
