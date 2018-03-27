@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./treeCreater.css">
 </head>
 <body>
 	<ul class="treeRoot"></ul>
@@ -16,6 +17,30 @@
                     {
                         title: 'quotaSubParent1',
                         children: []
+                    },
+                    {
+                        title: 'quotaSubParent2',
+                        children: [
+                            {
+                                title: 'quotaChild1'
+                            },
+                            {
+                                title: 'quotaChild2'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: 'quotaParent1',
+                children: [
+                    {
+                        title: 'quotaSubParent1',
+                        children: [
+                            {
+                                title: 'quotaChild1'
+                            }
+                        ]
                     },
                     {
                         title: 'quotaSubParent2',
